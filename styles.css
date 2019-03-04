@@ -1,0 +1,128 @@
+body{
+    /*background-image: url(img/BG.jpg);*/
+    background-size: cover;
+    font-family: sans-serif;
+}
+header{
+   display: flex; 
+   justify-content: space-between;
+   height: 100px;
+   align-items: center;
+}
+ul{
+    list-style: none;
+}
+.sidebar-left{
+    display: flex;
+    /* flex-direction: column; */
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    width: 30px;
+    transform: rotate(180deg);
+    align-items: center;
+
+}
+.sidebar-left li{
+margin:5px;
+}
+.box-shadow-menu {
+    position: relative;
+    padding-top: 25px;
+    padding-left: 80px;
+
+}
+.box-shadow-menu:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background:  rgb(233, 225, 225);
+    box-shadow:  0 0.25em 0 0 rgb(233, 225, 225),
+                 0 0.5em 0 0 rgb(233, 225, 225);
+}
+/* .sidebar-item{ */
+    /* position: relative; */
+/* } */
+.circle{
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+}
+.flex{
+    display: flex;
+}
+.orange-line{
+    width: 100px;
+    height: 3px;
+    background-color: rgb(216, 83, 7);
+    box-shadow: 0px 0px 3px 0px;
+    margin: 30px;
+}
+.text-iron{
+    color:rgb(216, 83, 7);
+    font-weight: 900px;
+    font-size: 150px;
+    margin:30px 0;
+    align-items: center;
+}
+.main-footer{
+
+}
+.main-footer span{
+font-size: 30px;
+font-weight: bold;
+color: black;
+}
+.main-black-top-link::before{
+content: "";
+background-color:rgb(216, 83, 7);
+height: 15px;
+width: 15px;
+display: block;
+position: relative;
+
+}
+.main-black-top-link{
+    color: white;
+}
+.main-black{
+    background-image: url(img/bg-main-black.jpg);
+    background-size: cover;
+
+}
+.sidebar{
+    width: 50px;
+}
+.arrow{
+    position: relative;
+    top:-20px;
+    left:8px;
+    font-size: 20px;
+}
+.man{
+    color:white;
+    font-size: 150px;
+}
+.orange-button{
+text-align: center;
+padding: 10px 20px;
+background-color:rgb(216, 83, 7);
+color:white;
+border: 1px solid rgb(216, 83, 7);
+border-radius: 2px;
+}
+.container{
+    width:90%;
+    margin: 0 auto;
+}
+section{
+    height: 80vh;
+    
+}
+.main-white,.main-black{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
