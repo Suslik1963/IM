@@ -1,5 +1,5 @@
 body{
-    /*background-image: url(img/BG.jpg);*/
+    /* background-image: url(img/BG.jpg); */
     background-size: cover;
     font-family: sans-serif;
 }
@@ -64,8 +64,8 @@ margin:5px;
     color:rgb(216, 83, 7);
     font-weight: 900px;
     font-size: 150px;
-    margin:30px 0;
-    align-items: center;
+    margin:92px 0;
+    text-align: right;
 }
 .main-footer{
 
@@ -76,15 +76,19 @@ font-weight: bold;
 color: black;
 }
 .main-black-top-link::before{
-content: "";
-background-color:rgb(216, 83, 7);
-height: 15px;
-width: 15px;
-display: block;
-position: relative;
-
+    content: "";
+    background-color: rgb(216, 83, 7);
+    height: 15px;
+    width: 15px;
+    display: block;
+    position: relative;
+     /* text-align: right;  */
+    float: right;
 }
 .main-black-top-link{
+    margin: 40px 40px 0 0;
+}
+.main-black-top-link span{
     color: white;
 }
 .main-black{
@@ -97,8 +101,9 @@ position: relative;
 }
 .arrow{
     position: relative;
-    top:-20px;
-    left:8px;
+    top: -5.5px;
+    left: 27px;
+    float: right;
     font-size: 20px;
 }
 .man{
@@ -112,6 +117,12 @@ background-color:rgb(216, 83, 7);
 color:white;
 border: 1px solid rgb(216, 83, 7);
 border-radius: 2px;
+margin: 40px 80px 10px 0px;
+}
+.button-container{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 70px;
 }
 .container{
     width:90%;
@@ -119,10 +130,50 @@ border-radius: 2px;
 }
 section{
     height: 80vh;
+
     
+}
+.main-white{
+    width: 40%;
+}
+.main-black{
+    width: 60%;  
 }
 .main-white,.main-black{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
+}
+.link{
+    color: white;
+}
+.front-man{
+    height: 100vh;
+    position: fixed;
+    top:15%;
+    left: 35%;
+    z-index: 10;
+}
+.circle-zero{
+border: 2px solid black;
+border-radius: 50%;
+}
+.circle-one{
+    border: 2px solid rgb(121, 118, 118);
+    border-radius: 50%;
+}
+.sidebar-right{
+
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 30px;
+    align-items: center;
+
+}
+.circle-one, .circle-zero{
+    
+    height: 6px; 
+    width: 6px;
 }
